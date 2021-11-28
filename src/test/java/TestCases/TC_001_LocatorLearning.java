@@ -10,7 +10,7 @@ import BasePackage.DriverSetup;
 
 public class TC_001_LocatorLearning extends DriverSetup{
 	
-	public static String baseurl="https://rahulshettyacademy.com/locatorspractice";
+	public static String baseurl="https://rahulshettyacademy.com/locatorspractice/";
 
 	@Test
 	public static void LocateElement() throws InterruptedException {
@@ -19,6 +19,8 @@ public class TC_001_LocatorLearning extends DriverSetup{
 		
 		driver.manage().window().maximize();
 		Thread.sleep(3000);
+		
+		
 		
 		driver.findElement(By.id("inputUsername")).sendKeys("Pranto");
 		Thread.sleep(3000);
@@ -31,6 +33,13 @@ public class TC_001_LocatorLearning extends DriverSetup{
 		
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());
 		Thread.sleep(3000);
+		
+		
+		
+		
+		
+		
+		
 
 		
 	}
